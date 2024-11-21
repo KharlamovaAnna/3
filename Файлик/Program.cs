@@ -25,7 +25,7 @@ namespace Файлик
             
             int[] massiv = new int[10]; //бахаем массив с произвольными числами
             bool flag = true;
-            int problemIndex = -1;
+            int problemIndex = 0;
             Console.WriteLine("Введите 10 целых чисел, нажимая Enter после каждого:"); //пользователь - дурак
             
             for (int i = 0; i < massiv.Length; i++)
@@ -42,7 +42,7 @@ namespace Файлик
                 if (massiv[i] < massiv[i - 1])
                 {
                     flag = false;
-                    problemIndex = i;
+                    problemIndex = i + 1;
                     break;
                 }
             }
